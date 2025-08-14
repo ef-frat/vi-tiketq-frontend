@@ -1,3 +1,5 @@
+'use client'
+
 export default function HeroSection() {
   return (
     <section className="bg-gradient-to-r from-blue-400 to-cyan-400 py-20 relative overflow-hidden">
@@ -18,7 +20,10 @@ export default function HeroSection() {
           Book flights and ferry tickets with ease. Discover amazing destinations with our trusted partners.
         </p>
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
-          <button className="bg-white text-blue-600 px-10 py-4 rounded-xl font-semibold hover:bg-blue-50 transition-all duration-300 hover:scale-105 shadow-xl hover:shadow-2xl transform hover:-translate-y-1">
+          <button 
+            onClick={() => window.location.href = '/order'}
+            className="bg-white text-blue-600 px-10 py-4 rounded-xl font-semibold hover:bg-blue-50 transition-all duration-300 hover:scale-105 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 cursor-pointer"
+          >
             ✈️ Book Flight
           </button>
           <button className="bg-blue-700 text-white px-10 py-4 rounded-xl font-semibold hover:bg-blue-600 transition-all duration-300 hover:scale-105 shadow-xl hover:shadow-2xl transform hover:-translate-y-1">
